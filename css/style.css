@@ -720,10 +720,16 @@ div.socialIcons ul {
     margin-left: 30px;
 }
 
+
+
+/*=============================================
+=           Nav Menu   animation       =
+=============================================*/
+
 .active {
     transform: translateX(0px);
     opacity: 1;
-    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.2);
     background: transparent radial-gradient(closest-side at 52% 49%, #C1EAEA 0%, #ABD9D7 100%) 0% 0% no-repeat padding-box;
     
 }
@@ -731,39 +737,3 @@ div.socialIcons ul {
 
 
 
-.hvr-bounce-to-right {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    position: relative;
-    transition-property: color;
-    transition-duration: 5.5s;
-}
-
-.hvr-bounce-to-right:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    transition-property: transform;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-}
-
-.hvr-bounce-to-right:hover,
-.hvr-bounce-to-right:focus,
-.hvr-bounce-to-right:active {
-    color: white;
-}
-
-.hvr-bounce-to-right:hover:before,
-.hvr-bounce-to-right:focus:before,
-.hvr-bounce-to-right:active:before {
-    transform: scaleX(1);
-    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
