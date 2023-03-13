@@ -8,14 +8,42 @@
     <title>The Donut Shop - Sweet Treats </title>
     <link rel="stylesheet" href="./css/style.css">
 
+
 </head>
 
 <body>
     <!-- Header -->
+    <div class="bgMenu"></div>
 
     <header>
         <img src="./images/Logo.svg" alt="The Donut Shop - Logo">
-        <nav><a class="hamburguerIcon" href="#"></a> </nav>
+
+        <div id="btnMain" class="menuTriguer"></div>
+
+
+        <nav class="menuBar" role="navigation">
+
+            <img class="logoMenu" src="./images/Logo.svg" alt="The Donut Shop - Logo">
+            <ul id="menu">
+                <li><a href="#">Home</a><span class="bgBtn"></span></li>
+                <li><a href="#">Menu</a><span class="bgBtn"></span></li>
+                <li><a href="#">About</a><span class="bgBtn"></span></li>
+                <li><a href="#">Contacr</a><span class="bgBtn"></span></li>
+            </ul>
+
+            <ul class="socialIcons">
+                <li><a href=""><img src="./images/Facebook-icon.svg" alt="Facebook"></a></li>
+                <li><a href=""><img src="./images/Twiter-icon.svg" alt="Twitter"></a></li>
+                <li><a href=""><img src="./images/Insta-icon.svg" alt="Instagram"></a></li>
+            </ul>
+
+            <div class="contacInfo">
+            <address class="adressHeader">5440 Argyle St, Port Alberni</address>
+            <a class="phoneNumberHeader" href="tel:123-456-7890">123-456-7890</a>
+        </div>
+
+        </nav>
+
     </header>
 
 
@@ -81,7 +109,7 @@
         </article>
         <article>
             <img src="./images/Products/Vanilla-chocolate-chips.jpg" alt="Vanilla Oreo Donut">
-            <h2 class="long" > <a href="#">Vanilla <br>Chocolate Chips</a></h2>
+            <h2 class="long"> <a href="#">Vanilla <br>Chocolate Chips</a></h2>
         </article>
         <article>
             <img src="./images/Products/Sugar-donut.jpg" alt="Vanilla Oreo Donut">
@@ -161,7 +189,7 @@
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet .</p>
             </div>
         </article>
-      
+
 
     </section>
 
@@ -181,8 +209,10 @@
 
 
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./Js/main.js"></script>
 
 </body>
+
 
 </html>
