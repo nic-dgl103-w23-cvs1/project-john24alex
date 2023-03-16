@@ -1,440 +1,463 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
+/*=============================================
+=            General Styles       =
+=============================================*/
+
 /* Remove padding and margin */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    /* font-family: 'Josefin Sans', sans-serif; */
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* font-family: 'Josefin Sans', sans-serif; */
 
-    font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    height: 90px;
-    width: 100%;
-    background-color: #fff;
-    border-bottom: solid 0.5px #d8d8d8;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 4;
+.disable{
+display: none;
 
+}
+
+.legalText{
+    font-size: 1.2rem;
+    color: #5d5d5d;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/*=============================================
+=            Home Page      =
+=============================================*/
+
+header {
+  height: 90px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: solid 0.5px #d8d8d8;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 4;
 }
 
 header img {
-    margin-left: 16px;
-    margin-top: 10px;
+  margin-left: 16px;
+  margin-top: 10px;
 }
 
-
-/*=============================================
-=            Section Hero         =
-=============================================*/
-
-
-
-
-
+/*----------  Hero Section ----------*/
 
 .hero {
-    height: 430px;
-    width: 100%;
-    background-color: yellow;
-    display: flex;
-    align-items: center;
-    background-image: url(../images/Hero-image-bg.jpg);
-    background-position-x: 25%;
-    justify-content: space-around;
+  height: 430px;
+  width: 100%;
 
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/Hero-image-bg.jpg);
+  background-position-x: 25%;
+  justify-content: space-around;
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero h1 {
-    margin-top: 76px;
-    margin-left: 100px;
-    font-size: 4rem;
-    line-height: 3.6rem;
-    text-transform: uppercase;
-    font-family: "Josefin Sans", sans-serif;
-    color: #fff;
+  margin-top: 76px;
+  margin-left: 100px;
+  font-size: 4rem;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
 }
 
 .hero span {
-    float: right;
-    margin-top: 2px;
-    font-size: 2rem;
-    margin-right: 50px;
+  float: right;
+  margin-top: 2px;
+  font-size: 2rem;
+  margin-right: 50px;
 }
 
 .hero .higlighted {
-    font-size: 4.1rem;
-    line-height: 3.6rem;
-    color: rgb(244 54 183);
-    margin-top: 0px;
-    margin-left: 3px;
-    margin-bottom: 20px;
+  font-size: 4.1rem;
+  line-height: 3.6rem;
+  color: rgb(244 54 183);
+  margin-top: 0px;
+  margin-left: 3px;
+  margin-bottom: 20px;
 }
 
 .button-white {
-    text-decoration: none;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    border: #fff solid 0.5px;
-    color: #fff;
-    padding: 7px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-    margin-top: 90px;
-    margin-left: 0px;
+  text-decoration: none;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: #fff solid 0.5px;
+  color: #fff;
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  margin-top: 90px;
+  margin-left: 0px;
 }
 
 .hero a {
-    margin-left: 188px;
+  margin-left: 188px;
 }
 
 .hero div {
-    margin-right: auto;
-    width: 360px;
-    margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  margin-left: auto;
 }
 
-
-
-/*=============================================
-=            Section Menu         =
-=============================================*/
+/*----------  Menu Section ----------*/
 
 article.copy {
-    display: flex;
-    align-items: center;
-    height: 163px;
-
-    margin: auto;
-    width: 100%;
-    padding-right: 7%;
-    padding-left: 7%;
-    gap: 23px;
+  display: flex;
+  align-items: center;
+  height: 163px;
+  max-width: 700px;
+  margin: auto;
+  width: 100%;
+  padding-right: 7%;
+  padding-left: 7%;
+  gap: 23px;
 }
 
 article.copy h2 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 2.5rem;
-    color: #ffde55;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.7rem;
+  color: #ffde55;
 }
 
 article.copy h2::first-line {
-    color: #4ecdc4;
+  color: #4ecdc4;
 }
 
 article.copy p {
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 1.3rem;
-    color: #767676;
-    font-weight: 300;
-    line-height: 22px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.3rem;
+  color: #767676;
+  font-weight: 300;
+  line-height: 22px;
 }
 
 .menuBanner {
-    height: 248px;
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    background-image: url(../images/banner_menu_bg.png);
-    background-position-x: 91%;
-    justify-content: space-around;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 248px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/banner_menu_bg.png);
+  background-position-x: 91%;
+  justify-content: space-around;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menuBanner div {
-    width: 80%;
-    height: 140px;
+  width: 80%;
+  height: 140px;
 }
 
 .menuBanner h2 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 3.5rem;
-    color: #32b9b3;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 3.1rem;
-    margin-bottom: 22px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.5rem;
+  color: #32b9b3;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 3.1rem;
+  margin-bottom: 22px;
 }
 
 .menuBanner h2::first-line {
-    color: #fff;
+  color: #fff;
 }
 
 .menuBanner span {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
-/* Section Favorites */
+/*----------  Section Favorites   ----------*/
 
 .favorites {
-    width: 95%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 40px;
-    display: flex;
-    /* flex-direction: row-reverse; */
-    columns: 0 2;
-    align-items: center;
-    align-content: space-between;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-    border-bottom: #e3e3e3 solid 0.5px;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  columns: 0 2;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: #e3e3e3 solid 0.5px;
+  max-width: 1080px;
 }
 
 .favorites h2 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 2.1rem;
-    color: #32b9b3;
-    width: 100%;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.1rem;
+  color: #32b9b3;
+  width: 100%;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .favorites article {
-    min-height: 191px;
-    width: 48%;
-    border: #32b9b3 0.5px solid;
+  min-height: 191px;
+  width: 48%;
+  border: #32b9b3 0.5px solid;
+  max-width: 250px;
 }
 
 .favorites article img {
-    width: 100%;
+  width: 100%;
 }
 
 .favorites article h2 {
-    text-align: center;
-    width: 60%;
+  text-align: center;
+  width: 60%;
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7px;
 }
 
 .favorites article h2.long {
-    width: 90%;
-
+  width: 90%;
 }
 
-
 .favorites article h2 a {
-    color: #695651;
-    text-decoration: none;
-    font-size: 1.6rem;
-    text-align: center;
+  color: #695651;
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 .favorites a {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    width: fit-content;
-    /* background-color: yellow; */
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration: none;
-    color: #32b9b3;
-    font-weight: 600;
-    margin-bottom: 20px;
-    margin-top: 16px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  width: 100%;
+  /* background-color: yellow; */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  color: #32b9b3;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 16px;
+  
 }
 
 /* Section About */
 
 section.about {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    height: auto;
-    margin: auto;
-    width: 100%;
-    gap: 10px;
-    margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  margin: auto;
+  width: 100%;
+  gap: 10px;
+  margin-top: 50px;
+  max-width: 600px;
 }
 
 section.about :first-child {
-    width: 150px;
+  width: 150px;
 }
 
 section.about .copy {
-    width: 68%;
+    width: 67%;
     font-size: 1.4rem;
     color: #767676;
     line-height: 2rem;
-    padding-left: 6%;
+    padding-left: 4%;
 }
 
 section.about img.logo {
-    width: 25%;
+  width: 25%;
 }
 
 section.about img.front {
-    height: auto;
-    width: 100%;
-    margin-top: 40px;
+  height: auto;
+  width: 100%;
+  margin-top: 40px;
+  
+  max-width: 540px;
 }
 
-/*=============================================
-=            Section Map            =
-=============================================*/
+/*----------  Map Section   ----------*/
 
 section div.white {
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
     height: 34px;
     /* bottom: 0px; */
-    margin-top: 392px;
+    margin-top: 401px;
     position: absolute;
     text-align: right;
     padding-right: 20px;
     padding-top: 7px;
-   
+    max-width: 1080px;
 }
 
 section div.white a {
-    color: #2778b1;
-    font-size: 1.1rem;
+  color: #2778b1;
+  font-size: 1.1rem;
 }
 
 section.Map {
-    margin-top: 35px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 #map {
     width: 100%;
+    height: 100%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.Map h2 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 2.4rem;
-    color: #32b9b3;
-    width: 100%;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 14px;
-    margin-left: 7%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.4rem;
+  color: #32b9b3;
+  width: 100%;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 14px;
+  margin-left: 7%;
+  margin-top: 10px;
 }
 
 section.Map h2 span.small {
-    font-size: 1.4rem;
-    text-align: right;
-    margin-left: 17px;
+  font-size: 1.4rem;
+  text-align: right;
+  margin-left: 17px;
 }
 
 section.Map h2 span.higlighted {
-    color: #f8d200;
-    margin-top: 22px;
-    line-height: 20px;
-    margin-left: 3px;
+  color: #f8d200;
+  margin-top: 22px;
+  line-height: 20px;
+  margin-left: 3px;
 }
 
 section.Map p.copy {
-    font-size: 1.4rem;
-    color: #767676;
-    width: 100%;
-    padding-left: 8%;
-    padding-right: 8%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
+  font-size: 1.4rem;
+  color: #767676;
+  width: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  max-width: 1080px;
 }
 
 section.Map .contact {
-    font-size: 1.4rem;
-    color: #838383;
+  font-size: 1.4rem;
+  color: #838383;
 }
 
 section.Map .locationInfo {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 section.Map .locationTitle,
 .phoneTitle,
 .hoursTitle {
-    width: 36%;
+  width: 36%;
 
-    padding-left: 20%;
-    color: #838383;
-    font-weight: 700;
-    font-size: 1.4rem;
-    height: 25px;
+  padding-left: 20%;
+  color: #838383;
+  font-weight: 700;
+  font-size: 1.4rem;
+  height: 25px;
 }
 
 section.Map .address,
 a.phoneNumber,
 .time {
-    width: 50%;
+  width: 50%;
 
-    color: #838383;
-    font-weight: 300;
-    font-size: 1.4rem;
-    padding-left: 25px;
-    height: 25px;
+  color: #838383;
+  font-weight: 300;
+  font-size: 1.4rem;
+  padding-left: 25px;
+  height: 25px;
 }
 
 section.Map .contactBtn {
-    width: fit-content;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1.6rem;
-    border: #f8d200 solid 1px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 15px;
-    padding-right: 20px;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    color: #f8d200;
+  width: fit-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border: #f8d200 solid 1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #f8d200;
 }
 
-/*=============================================
-=            Section Reviews            =
-=============================================*/
+/*----------  Reviews Section   ----------*/
 
 section.reviews {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 10px;
-    background-color: #fafafa;
-    padding-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  background-color: #fafafa;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 section.reviews h2 {
@@ -444,296 +467,954 @@ section.reviews h2 {
     line-height: 1.9rem;
     width: 100%;
     /* padding-left: 10%; */
-    margin-left: 7%;
+    /* margin-left: 17%; */
     font-weight: 600;
     padding-bottom: 30px;
+    /* max-width: 766px; */
+    padding-left: 10%;
 }
 
 section.reviews h2::first-line {
-    font-size: 1.4rem;
-    color: #f8d200;
-    font-weight: 300;
+  font-size: 1.4rem;
+  color: #f8d200;
+  font-weight: 300;
 }
 
 section.reviews article {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 94%;
-    background-color: #fff;
-    height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 94%;
+  background-color: #fff;
+  height: 100px;
+  max-width: 980px;
 }
 
 section.reviews article img {
-    border-radius: 50%;
-    width: 51px;
-    height: 51px;
-    margin-left: 20px;
+  border-radius: 50%;
+  width: 51px;
+  height: 51px;
+  margin-left: 20px;
 }
 
 section.reviews article div p {
-    color: #808080;
-    font-size: 1.4rem;
-    width: 90%;
+  color: #808080;
+  font-size: 1.4rem;
+  width: 90%;
 }
 
 section.reviews article div h3 {
-    color: #3280b9;
-    font-size: 1.4rem;
-    width: 90%;
+  color: #3280b9;
+  font-size: 1.4rem;
+  width: 90%;
 }
 
-/*=============================================
-=          Footer         =
-=============================================*/
+/*----------  Footer Section   ----------*/
 
 footer {
-    height: 170px;
-    width: 100%;
-    background-color: #c4ecec;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 50px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+  height: 170px;
+  width: 100%;
+  background-color: #c4ecec;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  overflow-x: hidden;
 }
 
 footer .logoFooter {
-
-    margin-left: 7%;
-    width: 99px;
-
+  margin-left: 7%;
+  width: 99px;
 }
 
 section.socialIcons ul {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 7%;
-    width: 140px;
-
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 7%;
+  width: 140px;
 }
 
 section.socialIcons ul li {
-    list-style-type: none;
-    width: 29px;
+  list-style-type: none;
+  width: 29px;
 }
 
 footer .adressFooter,
 .phoneNumberFooter {
-    width: 100%;
-    text-align: center;
-
+  width: 100%;
+  text-align: center;
 }
 
 footer .adressFooter,
 .phoneNumberFooter {
-    font-size: 1.3rem;
-    color: #369e97;
-    font-style: normal;
-    line-height: 1.3rem;
-
-
+  font-size: 1.3rem;
+  color: #369e97;
+  font-style: normal;
+  line-height: 1.3rem;
 }
 
 footer .phoneNumberFooter {
-
-    margin-top: -5px;
-    margin-bottom: 20px;
-
+  margin-top: -5px;
+  margin-bottom: 20px;
 }
 
 footer a.phoneNumberFooter {
-
-    text-decoration: none;
+  text-decoration: none;
 }
 
+/*----------  Nav Menu   ----------*/
 
-
-
-/*=============================================
-=           Nav Menu         =
-=============================================*/
 .menuTriguer {
-
-    margin-right: 30px;
-    width: 26px;
-    height: 20px;
-    background-image: url(../images/hamburger-menu.svg);
+  margin-right: 30px;
+  width: 26px;
+  height: 20px;
+  background-image: url(../images/hamburger-menu.svg);
+  cursor: pointer;
 }
 
-
-header nav {}
+header nav {
+}
 
 header nav #menu a {
-    width: 26px;
-    height: 20px;
-    margin-right: 20px;
-    padding-left: 43px;
-
+  width: 26px;
+  height: 20px;
+  margin-right: 20px;
+  padding-left: 43px;
+  z-index: 5;
 }
-
 
 a.hamburguerIcon {
-    width: 26px;
-    height: 20px;
+  width: 26px;
+  height: 20px;
 }
 
-
-
-
-
-
 header a {
-    text-decoration: none;
-    font-size: 2.5em;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #fff;
-    opacity: 3.34;
-   
+  text-decoration: none;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 3.34;
 }
 
 header a:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 header ul#menu {
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-family: "Josefin Sans", sans-serif;
-    gap: 15px;
-    
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+  gap: 15px;
 }
-
 
 header ul.socialIcons {
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction:row;
-    gap: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-nav ul li span.bgBtn{
-
-    mix-blend-mode: overlay;
-    opacity: 0.34;
-    width: 228px;
-    height: 53px;
-    display: block;
-    margin-top: -40px;
-    border-bottom: white 1px solid;
-
-
+nav ul li span.bgBtn {
+  mix-blend-mode: overlay;
+  opacity: 0.34;
+  width: 228px;
+  height: 53px;
+  display: block;
+  margin-top: -40px;
+  border-bottom: white 1px solid;
 }
-nav ul li span.bgBtn:hover{
-
-    background: transparent linear-gradient(270deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
-
+nav ul li span.bgBtn:hover {
+  background: transparent linear-gradient(270deg, #00000000 0%, #000000 100%) 0%
+    0% no-repeat padding-box;
+  pointer-events: none;
 }
 
-nav ul li span.bgBtn:active{
-
-    background: transparent linear-gradient(270deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
-
+nav ul li span.bgBtn:active {
+  background: transparent linear-gradient(270deg, #00000000 0%, #000000 100%) 0%
+    0% no-repeat padding-box;
+  pointer-events: none;
 }
 
-.phoneNumberHeader{
-    font-size: 1.3rem;
-    color: #242424;
-    font-style: normal;
-    line-height: 1.3rem;
-
+.phoneNumberHeader {
+  font-size: 1.3rem;
+  color: #242424;
+  font-style: normal;
+  line-height: 1.3rem;
 }
-.adressHeader, .phoneNumberHeader {
-    font-size: 1.3rem;
-    font-style: normal;
-    line-height: 2.5rem;
-    color: #609493;
-}
-
-header .contacInfo{
-
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    
+.adressHeader,
+.phoneNumberHeader {
+  font-size: 1.3rem;
+  font-style: normal;
+  line-height: 2.5rem;
+  color: #609493;
 }
 
+header .contacInfo {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 div.socialIcons ul {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 7%;
-    width: 140px;
-
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 7%;
+  width: 140px;
 }
-
-
-
 
 .menuBar {
-    width: 80%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: transparent radial-gradient(closest-side at 52% 49%, #C1EAEA 0%, #ABD9D7 100%) 0% 0% no-repeat padding-box;
-    transform: translateX(-100%);
-    z-index: -1;
-    opacity: 0;
-    transition: all 0.65s ease;
-    z-index: 9;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex-direction: column;
-    /* font-family: "Josefin Sans", sans-serif; */
-    gap: 104px;
-    /* justify-content: space-between; */
-   
-
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent
+    radial-gradient(closest-side at 52% 49%, #c1eaea 0%, #abd9d7 100%) 0% 0%
+    no-repeat padding-box;
+  transform: translateX(-200%);
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.65s ease;
+  z-index: 9;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* font-family: "Josefin Sans", sans-serif; */
+  gap: 10px;
+   justify-content: space-between; 
+  margin-left: -300px;
 }
 
-.menuBar img.logoMenu{
-    width: 167px;
-    margin-top: 140px;
-    margin-left: 30px;
+.menuBar img.logoMenu {
+  width: 167px;
+  margin-top: 140px;
+  margin-left: 30px;
 }
 
-
-
-/*=============================================
-=           Nav Menu   animation       =
-=============================================*/
+/*----------   Nav Menu  animation    ----------*/
 
 .active {
-    transform: translateX(0px);
-    opacity: 1;
-    transition-timing-function: cubic-bezier(0.2);
-    background: transparent radial-gradient(closest-side at 52% 49%, #C1EAEA 0%, #ABD9D7 100%) 0% 0% no-repeat padding-box;
-    
+  transform: translateX(0px);
+  opacity: 1;
+  transition-timing-function: cubic-bezier(0.2);
+  background: transparent
+    radial-gradient(closest-side at 52% 49%, #c1eaea 0%, #abd9d7 100%) 0% 0%
+    no-repeat padding-box;
+  margin-left: 0px;
+}
+
+/*=============================================
+=            Page menu          =
+=============================================*/
+
+/*----------   Hero  Section    ----------*/
+
+
+
+
+
+/*----------  Hero Section ----------*/
+
+
+
+.hero-menu {
+  height: 328px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  background-position-x: 25%;
+  justify-content: space-around;
+
+  background-repeat: no-repeat;
+
+  z-index: 1;
+
+  background: radial-gradient(
+    closest-side at 50% 60%,
+    rgb(145, 229, 254) 0%,
+    rgb(91, 199, 235) 70%,
+    rgb(91, 199, 235) 100%
+  );
+
+  position: relative;
+
+  padding-left: 29px;
+}
+.bg_hero {
+  position: absolute;
+  height: 242px;
+  bottom: -11px;
+  right: 64%;
+}
+
+.hero-menu h1 {
+  margin-top: 135px;
+  margin-left: 3%;
+  font-size: 4rem;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+}
+
+.hero-menu span {
+  float: right;
+  margin-top: -32px;
+  font-size: 2rem;
+  margin-left: 118px;
+
+}
+
+.hero-menu .higlighted {
+    font-size: 4.1rem;
+    line-height: 3.6rem;
+    color: rgb(255 230 109);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    position: absolute;
+} 
+.hero-menu div h1 span.small{
+    margin-left: 16px;
+}
+
+
+/*----------   Menu List Section    ----------*/
+
+section.menuList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 35px;
+  justify-content: space-evenly;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.menuList h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #32b9b3;
+  line-height: 1.9rem;
+  width: 100%;
+  /* padding-left: 10%; */
+  margin-left: 7%;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+section.menuList h2::first-line {
+  font-size: 1.4rem;
+  color: #f8d200;
+  font-weight: 300;
+}
+
+section.menuList article {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: #fff;
+  height: 100px;
+  max-width: 420px;
+}
+
+section.menuList article img {
+  width: 122px;
+  height: 109px;
+}
+
+section.menuList article div p {
+  color: #8e8e8e;
+  font-size: 1.4rem;
+  width: 100%;
+  font-weight: 300;
+  line-height: 1.9rem;
+  padding-top: 15px;
+}
+
+section.menuList article div h3 {
+  color: #181b1f;
+  font-size: 1.9rem;
+  width: 100%;
+  font-weight: 300;
+}
+
+/*=============================================
+=            About Section          =
+=============================================*/
+
+/*----------   Hero  Section    ----------*/
+.hero-about {
+  height: 328px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  background-position-x: 25%;
+  justify-content: start;
+
+  background-repeat: no-repeat;
+
+  z-index: 1;
+
+  background: radial-gradient(
+    closest-side at 50% 80%,
+    rgb(235, 244, 243) 0,
+    rgb(207, 207, 207) 100%
+  );
+
+  position: relative;
+  overflow-x: clip;
+  padding-left: 29px;
+}
+.bg_hero-about {
+  position: absolute;
+  height: 270px;
+  bottom: -24px;
+  left: 44%;
+  background-image: url(../images/kid-eating--chocolate-donut.png);
+  background-repeat: no-repeat;
+}
+
+.hero-about div {
+  width: 100%;
+  margin-left: 8%;
+}
+
+.hero-about h1 {
+  margin-top: 65px;
+  font-size: 4rem;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+}
+
+.hero-about span {
+  float: right;
+  margin-top: -12px;
+  font-size: 2rem;
+  margin-left: -36px;
+  position: absolute;
+}
+
+.hero-about .higlighted {
+  font-size: 3.4rem;
+  line-height: 3.6rem;
+  color: rgb(91 87 94);
+  margin-top: -39px;
+  margin-left: 17px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.hero-about .higlighted .large {
+  font-size: 3.6rem;
+  margin-top: -5px;
+}
+
+/*----------   About  Section    ----------*/
+section.about-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+section.about-paragraph article {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+}
+
+section.about-paragraph article h2 {
+  color: #181b1f;
+  font-size: 2.2rem;
+  font-weight: 300;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 4%; */
+  margin-bottom: 20px;
+  width: 85%;
+}
+section.about-paragraph article p {
+  color: #8e8e8e;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2.3rem;
+  width: 87%;
+}
+section.about-paragraph article div {
+  background: radial-gradient(
+    closest-side at 50% 60%,
+    rgb(91, 199, 235) 0%,
+    rgb(145, 229, 254) 50%,
+    rgb(91, 199, 235) 100%
+  );
+  height: 220px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+section.about-paragraph article div img {
+  height: 176px;
+}
+
+section.about-paragraph article a {
+  width: fit-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border: #32b9b3 solid 1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #32b9b3;
+}
+
+section.about-paragraph img {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+section.about-paragraph video {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*=============================================
+=            Details Section          =
+=============================================*/
+
+/*----------   Hero  Section    ----------*/
+.hero-detail {
+  height: 328px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  background-position-x: 25%;
+  justify-content: space-around;
+
+  background-repeat: no-repeat;
+
+  z-index: 1;
+
+  background: radial-gradient(
+    closest-side at 50% 60%,
+    rgb(255, 194, 210) 0%,
+    rgb(255, 194, 210) 50%,
+    rgb(244, 152, 189) 100%
+  );
+
+  position: relative;
+
+  padding-left: 29px;
+}
+.bg_hero-detail {
+  position: absolute;
+  height: 242px;
+  bottom: -30px;
+  right: 64%;
+}
+.hero-detail div{
+position: relative;
+margin-left: -20%;
+
+}
+
+.hero-detail h1 {
+    margin-top: 23px;
+    left: 42%;
+    font-size: 4rem;
+    line-height: 3.6rem;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    color: #fff;
+    position: absolute;
 }
 
 
 
 
+
+
+
+.hero-detail .higlighted {
+    font-size: 4.3rem;
+    line-height: 3.6rem;
+    color: rgba(209, 15, 164, 0.9);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    position: absolute;
+} 
+.hero-detail div h1 span.small{
+    
+    font-size: 1.5rem;
+    position: absolute;
+    top: 41px;
+    left: 150px;
+}
+
+
+
+
+/*----------   Details  Section    ----------*/
+section.donut-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section.donut-details article {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+section.donut-details article h2 {
+  color: #181b1f;
+  font-size: 2.2rem;
+  font-weight: 300;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 4%; */
+  margin-bottom: 20px;
+  width: 85%;
+}
+section.donut-details article p {
+  color: #8e8e8e;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2.3rem;
+  width: 87%;
+}
+section.donut-details article div {
+  background: radial-gradient(
+    closest-side at 50% 60%,
+    rgb(91, 199, 235) 0%,
+    rgb(145, 229, 254) 50%,
+    rgb(91, 199, 235) 100%
+  );
+  height: 220px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+section.donut-details article div img {
+  height: 176px;
+}
+
+section.donut-details article a {
+  width: fit-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border: #32b9b3 solid 1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #32b9b3;
+}
+
+/*=============================================
+=            Contact  Page          =
+=============================================*/
+
+/*----------   Hero  Section    ----------*/
+.hero-contact {
+  height: 328px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  background-position-x: 25%;
+  justify-content: start;
+
+  background-repeat: no-repeat;
+
+  z-index: 1;
+
+  background: radial-gradient(
+    closest-side at 50% 60%,
+    #c1eaea 0%,
+    #abd9d7 70%,
+    #abd9d7 100%
+  );
+
+  position: relative;
+  overflow-x: clip;
+  padding-left: 29px;
+}
+
+.bg_hero-contact {
+  position: absolute;
+  height: 260px;
+  bottom: 0px;
+  right: -30%;
+  background-image: url(../images/woman-eating-donuts-banner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero-contact div {
+  width: 100%;
+  margin-left: 8%;
+}
+
+.hero-contact h1 {
+  margin-top: 65px;
+  font-size: 4rem;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+}
+
+.hero-contact span {
+  float: right;
+  margin-top: -32px;
+  font-size: 2rem;
+  margin-left: 140px;
+  position: absolute;
+}
+
+.hero-contact .higlighted {
+  font-size: 3.6rem;
+  line-height: 3.6rem;
+  color: #32b9b3;
+  margin-top: -39px;
+  margin-left: -1px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.hero-contact .higlighted .large {
+  font-size: 3.1rem;
+  margin-top: -5px;
+  margin-left: 0px;
+}
+
+section.contact-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+section.contact-paragraph article {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+}
+
+section.contact-paragraph article h2 {
+  color: #181b1f;
+  font-size: 2.2rem;
+  font-weight: 300;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 4%; */
+  margin-bottom: 20px;
+  width: 85%;
+}
+section.contact-paragraph article p {
+  color: #8e8e8e;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2.3rem;
+  width: 87%;
+}
+
+/*----------   Contact Form    ----------*/
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 86%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  color: #808080;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: solid 0.5px #cbcbcb;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.6rem;
+  height: 50px;
+  font-weight: 400;
+  color: #777f7f;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+
+  background-color: rgb(233, 233, 233);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  background-color: yellow;
+}
+.btn-submit {
+  width: fit-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border: #32b9b3 solid 1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  color: #32b9b3;
+  background-color: #fff;
+}
+.sendBtn {
+  text-align: center;
+}
+
+.btn-submit:hover {
+  background-color: #32b9b3;
+  color: #fff;
+}
+
+
+
+
+/**
+ *
+ * Brosers correction
+ *
+ */
+
+
+/* Safari 10.1+ */
+
+@media not all and (min-resolution:.001dpcm) { @media {
+
+    body { 
+
+        color:#0000FF; 
+        background-color:#0000FF; 
+
+    }
+}}

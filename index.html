@@ -7,6 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Donut Shop - Sweet Treats </title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+  
+
+
+
 
 
 </head>
@@ -16,19 +27,22 @@
     <div class="bgMenu"></div>
 
     <header>
-        <img src="./images/Logo.svg" alt="The Donut Shop - Logo">
+        <a href="index.html"> <img src="./images/Logo.svg" alt="The Donut Shop - Logo"></a>
+
 
         <div id="btnMain" class="menuTriguer"></div>
 
 
         <nav class="menuBar" role="navigation">
 
-            <img class="logoMenu" src="./images/Logo.svg" alt="The Donut Shop - Logo">
+            <a href="index.html"> <img class="logoMenu" src="./images/Logo.svg" alt="The Donut Shop - Logo"></a>
             <ul id="menu">
                 <li><a href="#">Home</a><span class="bgBtn"></span></li>
-                <li><a href="#">Menu</a><span class="bgBtn"></span></li>
-                <li><a href="#">About</a><span class="bgBtn"></span></li>
-                <li><a href="#">Contacr</a><span class="bgBtn"></span></li>
+                <li><a href="pages/menu.html">Menu</a><span class="bgBtn"></span></li>
+                <li><a href="pages/about.html">About</a><span class="bgBtn"></span></li>
+                <li><a href="pages/contact.html">Contact</a><span class="bgBtn"></span></li>
+
+
             </ul>
 
             <ul class="socialIcons">
@@ -38,9 +52,9 @@
             </ul>
 
             <div class="contacInfo">
-            <address class="adressHeader">5440 Argyle St, Port Alberni</address>
-            <a class="phoneNumberHeader" href="tel:123-456-7890">123-456-7890</a>
-        </div>
+                <address class="adressHeader">5440 Argyle St, Port Alberni</address>
+                <a class="phoneNumberHeader" href="tel:123-456-7890">123-456-7890</a>
+            </div>
 
         </nav>
 
@@ -83,43 +97,53 @@
         <h2>People favorites</h2>
 
         <article>
-            <img src="./images/Products/Vanilla-oreo-donut.jpg" alt="Vanilla Oreo Donut">
+            <a href="pages/vanilla-chocolate-chips.html">
+                <img src="./images/Products/Vanilla-oreo-donut.jpg" alt="Vanilla Oreo Donut"></a>
             <h2> <a href="#">Vanilla<br> Oreo</a></h2>
         </article>
 
         <article>
-            <img src="./images/Products/Vanilla-rainbow-donut.jpg" alt="Vanilla Oreo Donut">
+            <a href="pages/vanilla-chocolate-chips.html">
+                <img src="./images/Products/Vanilla-rainbow-donut.jpg" alt="Vanilla Oreo Donut"></a>
             <h2> <a href="#">Vanilla <br>Rainvow</a></h2>
         </article>
         <article>
-            <img src="./images/Products/Chocolate-glaze.jpg" alt="Vanilla Oreo Donut">
+            <a href="pages/vanilla-chocolate-chips.html">
+                <img src="./images/Products/Chocolate-glaze.jpg" alt="Vanilla Oreo Donut"></a>
             <h2> <a href="#">Chocolate <br>Glaze</a></h2>
         </article>
         <article>
-            <img src="./images/Products/Cinnamon-sugar.jpg" alt="Vanilla Oreo Donut">
+            <a href="pages/vanilla-chocolate-chips.html">
+                <img src="./images/Products/Cinnamon-sugar.jpg" alt="Vanilla Oreo Donut"></a>
             <h2> <a href="#">Cinnamon <br>Sugar</a></h2>
         </article>
         <article>
-            <img src="./images/Products/Mapple-glaze.jpg" alt="Vanilla Oreo Donut">
+            <a href="pages/vanilla-chocolate-chips.html">
+                <img src="./images/Products/Mapple-glaze.jpg" alt="Vanilla Oreo Donut"></a>
             <h2> <a href="#">Maple<br> Glaze</a></h2>
         </article>
         <article>
-            <img src="./images/Products/Chocolate-sprinkles.jpg" alt="Vanilla Oreo Donut">
+            <a href="pages/vanilla-chocolate-chips.html">
+                <img src="./images/Products/Chocolate-sprinkles.jpg" alt="Vanilla Oreo Donut"></a>
             <h2> <a href="#">Chocolate<br> Sprinkles</a></h2>
         </article>
         <article>
-            <img src="./images/Products/Vanilla-chocolate-chips.jpg" alt="Vanilla Oreo Donut">
+            <a href="pages/vanilla-chocolate-chips.html">
+                <img src="./images/Products/Vanilla-chocolate-chips.jpg" alt="Vanilla Oreo Donut"></a>
             <h2 class="long"> <a href="#">Vanilla <br>Chocolate Chips</a></h2>
         </article>
         <article>
-            <img src="./images/Products/Sugar-donut.jpg" alt="Vanilla Oreo Donut">
+            <a href="pages/vanilla-chocolate-chips.html">
+                <img src="./images/Products/Sugar-donut.jpg" alt="Vanilla Oreo Donut"></a>
             <h2> <a href="#">Sugar<br> Donut</a></h2>
         </article>
 
 
-        <a href="#">See All</a>
+        <a href="pages/menu.html">See All</a>
     </section>
 
+
+    <!-- About Section -->
 
     <section class="about">
 
@@ -155,6 +179,7 @@
         </div>
     </section>
 
+    <!-- Reviews Section -->
 
     <section class="reviews">
         <h2>Reviews<br> <span>What people says</span></h2>
@@ -164,7 +189,8 @@
             <img src="images/Reviews/jane-doe-avatar.jpg" alt="Jane Doe Avavtar">
             <div>
                 <h3>Olivia Jones</h3>
-                <p>Simply the best donuts in town! The apple fritters are my personal favorite. You won't be disappointed.</p>
+                <p>Simply the best donuts in town! The apple fritters are my personal favorite. You won't be
+                    disappointed.</p>
             </div>
         </article>
 
@@ -172,28 +198,31 @@
             <img src="./images/Reviews/janes-doe-avatar.jpg" alt="Jane Doe Avavtar">
             <div>
                 <h3>Marian Adams</h3>
-                <p>A must-visit for any donut enthusiast! The glazed donuts are perfect and the service is always excellent.</p>
+                <p>A must-visit for any donut enthusiast! The glazed donuts are perfect and the service is always
+                    excellent.</p>
             </div>
         </article>
         <article>
             <img src="./images/Reviews/janes2-doe-avatar.jpg" alt="Jane Doe Avavtar">
             <div>
                 <h3>Lily Chen</h3>
-                <p>This place has an amazing selection of donuts! The blueberry cake donut is to die for. I'll definitely be back.</p>
+                <p>This place has an amazing selection of donuts! The blueberry cake donut is to die for. I'll
+                    definitely be back.</p>
             </div>
         </article>
         <article>
             <img src="./images/Reviews/john-doe-avatar.jpg" alt="Jane Doe Avavtar">
             <div>
                 <h3>William Johnson</h3>
-                <p>The donuts here are out of this world! The cinnamon sugar donut is a classic and they make it perfectly. Highly recommended.</p>
+                <p>The donuts here are out of this world! The cinnamon sugar donut is a classic and they make it
+                    perfectly. Highly recommended.</p>
             </div>
         </article>
 
 
     </section>
 
-
+    <!-- Footer Section -->
     <footer>
         <img class="logoFooter" src="./images/Logo.svg" alt="he Donut Shop Logo">
         <section class="socialIcons">
@@ -209,6 +238,8 @@
 
 
     </footer>
+    <p class="legalText"> <strong> Disclaimer:</strong> This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="./Js/main.js"></script>
 
