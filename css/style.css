@@ -1448,12 +1448,13 @@ input:-webkit-autofill:active {
   }
   header nav #menu a {
     color: #4ecdc4;
-    width: 130px;
+    width: 100px;
     margin-top: 0px;
     text-align: center;
-    padding-top: 31px;
+    padding-top: 37px;
     height: 87px;
     background: none;
+    font-size: 2rem;
   }
 
   header nav #menu a:active {
