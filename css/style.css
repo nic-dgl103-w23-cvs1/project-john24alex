@@ -774,7 +774,7 @@ div.socialIcons ul {
 
 /*----------   Nav Menu  animation    ----------*/
 
-.active {
+.activeMenu {
   transform: translateX(0px);
   opacity: 1;
   transition-timing-function: cubic-bezier(0.2, 0.3, 0.4, 0.5);
