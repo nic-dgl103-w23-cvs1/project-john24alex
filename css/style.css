@@ -76,7 +76,9 @@ header img {
 
   display: flex;
   align-items: center;
-  background-image: url(../images/Hero-image-bg.jpg);
+  background-image: url(../images/Hero-image-Bg.jpg);
+
+  
   background-position-x: 25%;
   justify-content: space-around;
 
