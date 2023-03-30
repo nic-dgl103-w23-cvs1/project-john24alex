@@ -327,12 +327,22 @@
 
 let hubJS = document.createElement("script");
 hubJS.setAttribute("src", "https://js-na1.hs-scripts.com/24076351.js");
-document.body.appendChild(hubJS);
+
+setTimeout(() => { 
+
+    document.body.appendChild(hubJS);
+ }, 5000);
+
+
 
 
 let mainJS = document.createElement("script");
 mainJS.setAttribute("src", "./Js/main.js");
 document.body.appendChild(mainJS);
+
+
+
+
 
 
 hubJS.addEventListener("load", scriptLoaded, false);
