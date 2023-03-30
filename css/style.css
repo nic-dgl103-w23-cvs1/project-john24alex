@@ -276,6 +276,21 @@ article.copy p {
   max-width: 48px;
 }
 
+.favorites article a {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  width: 100%;
+  /* background-color: yellow; */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  color: #32b9b3;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 16px;
+}
+
 .favorites a {
   font-size: 1.6rem;
   text-transform: uppercase;
