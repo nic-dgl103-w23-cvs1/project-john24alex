@@ -260,6 +260,7 @@ article.copy p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 7px;
+  min-height:48px;
 }
 
 .favorites article h2.long {
@@ -271,6 +272,8 @@ article.copy p {
   text-decoration: none;
   font-size: 1.6rem;
   text-align: center;
+  min-height:48px;
+  max-width: 48px;
 }
 
 .favorites a {
