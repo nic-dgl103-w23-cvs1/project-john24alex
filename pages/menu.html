@@ -233,11 +233,60 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src=".././Js/main.js"></script>
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/24076351.js"></script>
-    <!-- End of HubSpot Embed Code -->
+    <!-- Scripts JS Embed Code -->
+
+    
+    <script>
+
+
+        let jQueryJs = document.createElement("script");
+        jQueryJs.setAttribute("src", "https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js");
+        setTimeout(() => {
+            document.body.appendChild(jQueryJs);
+        }, 2000);
+
+
+
+
+        let hubJS = document.createElement("script");
+        hubJS.setAttribute("src", "https://js-na1.hs-scripts.com/24076351.js");
+        setTimeout(() => {
+            document.body.appendChild(hubJS);
+        }, 5000);
+
+
+        
+
+
+        let mainJS = document.createElement("script");
+        mainJS.setAttribute("src", "./Js/main.js");
+        setTimeout(() => {
+            document.body.appendChild(mainJS);
+        }, 5000);
+
+       
+
+
+        jQueryJs.addEventListener("load", scriptLoadedJquery, false);
+        hubJS.addEventListener("load", scriptLoaded, false);
+        mainJS.addEventListener("load", scriptLoadedMain, false);
+
+
+
+        function scriptLoadedJquery() {
+            console.log("Script Jquery is ready to rock and roll!");
+        }
+
+
+        function scriptLoaded() {
+            console.log("Script is ready to rock and roll!");
+        }
+
+        function scriptLoadedMain() {
+            console.log("Script Main is ready to rock and roll!");
+        }
+
+    </script>
 </body>
 
 </html>

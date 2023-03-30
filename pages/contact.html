@@ -163,40 +163,60 @@
     </footer>
 
     <p class="legalText"> <strong> Disclaimer:</strong> This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
-
  <!-- Scripts JS Embed Code -->
- 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-<script>
+    
+ <script>
+
+
+    let jQueryJs = document.createElement("script");
+    jQueryJs.setAttribute("src", "https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js");
+    setTimeout(() => {
+        document.body.appendChild(jQueryJs);
+    }, 2000);
+
+
+
+
+    let hubJS = document.createElement("script");
+    hubJS.setAttribute("src", "https://js-na1.hs-scripts.com/24076351.js");
+    setTimeout(() => {
+        document.body.appendChild(hubJS);
+    }, 5000);
+
 
     
 
 
+    let mainJS = document.createElement("script");
+    mainJS.setAttribute("src", "./Js/main.js");
+    setTimeout(() => {
+        document.body.appendChild(mainJS);
+    }, 5000);
 
-let hubJS = document.createElement("script");
-hubJS.setAttribute("src", "https://js-na1.hs-scripts.com/24076351.js");
-document.body.appendChild(hubJS);
-
-
-let mainJS = document.createElement("script");
-mainJS.setAttribute("src", ".././Js/main.js");
-document.body.appendChild(mainJS);
+   
 
 
-hubJS.addEventListener("load", scriptLoaded, false);
-mainJS.addEventListener("load", scriptLoadedMain, false);
+    jQueryJs.addEventListener("load", scriptLoadedJquery, false);
+    hubJS.addEventListener("load", scriptLoaded, false);
+    mainJS.addEventListener("load", scriptLoadedMain, false);
 
-function scriptLoaded() {
-  console.log("Script is ready to rock and roll!");
-}
 
-function scriptLoadedMain() {
-  console.log("Script Main is ready to rock and roll!");
-}
+
+    function scriptLoadedJquery() {
+        console.log("Script Jquery is ready to rock and roll!");
+    }
+
+
+    function scriptLoaded() {
+        console.log("Script is ready to rock and roll!");
+    }
+
+    function scriptLoadedMain() {
+        console.log("Script Main is ready to rock and roll!");
+    }
 
 </script>
-
 
 
 
