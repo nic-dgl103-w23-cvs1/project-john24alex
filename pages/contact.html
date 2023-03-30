@@ -55,9 +55,18 @@
             </ul>
 
             <ul class="socialIcons">
-                <li><a href=""><img src=".././images/Facebook-icon.svg" alt="Facebook"></a></li>
-                <li><a href=""><img src=".././images/Twiter-icon.svg" alt="Twitter"></a></li>
-                <li><a href=""><img src=".././images/Insta-icon.svg" alt="Instagram"></a></li>
+                <li><a href="../index.html" aria-label="Facebook"><img src=".././images/Facebook-icon.svg"
+                            alt="Facebook">
+                            <span class="sr-only">The Donut Shop - Facebook</span>
+                        </a></li>
+                <li><a href="../index.html" aria-label="Twitter"><img src=".././images/Twiter-icon.svg"
+                            alt="Twitter">
+                            <span class="sr-only">The Donut Shop - Twitter</span>
+                        </a></li>
+                <li><a href="../index.html" aria-label="Instgram"><img src=".././images/Insta-icon.svg"
+                            alt="Instagram">
+                            <span class="sr-only">The Donut Shop - Instagram</span>
+                        </a></li>
             </ul>
 
             <div class="contacInfo">
@@ -131,10 +140,19 @@
     <footer>
         <img class="logoFooter" src=".././images/Logo.svg" alt="he Donut Shop Logo">
         <section class="socialIcons">
-            <ul>
-                <li><a href=""><img src=".././images/Facebook-icon.svg" alt="Facebook"></a></li>
-                <li><a href=""><img src=".././images/Twiter-icon.svg" alt="Twitter"></a></li>
-                <li><a href=""><img src=".././images/Insta-icon.svg" alt="Instagram"></a></li>
+            <ul class="socialIcons">
+                <li><a href="../index.html" aria-label="Facebook"><img src=".././images/Facebook-icon.svg"
+                            alt="Facebook">
+                            <span class="sr-only">The Donut Shop - Facebook</span>
+                        </a></li>
+                <li><a href="../index.html" aria-label="Twitter"><img src=".././images/Twiter-icon.svg"
+                            alt="Twitter">
+                            <span class="sr-only">The Donut Shop - Twitter</span>
+                        </a></li>
+                <li><a href="../index.html" aria-label="Instgram"><img src=".././images/Insta-icon.svg"
+                            alt="Instagram">
+                            <span class="sr-only">The Donut Shop - Instagram</span>
+                        </a></li>
             </ul>
         </section>
 
@@ -146,12 +164,45 @@
 
     <p class="legalText"> <strong> Disclaimer:</strong> This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
 
+ <!-- Scripts JS Embed Code -->
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src=".././Js/main.js"></script>
-    <!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/24076351.js"></script>
-<!-- End of HubSpot Embed Code -->
+<script>
+
+    
+
+
+
+let hubJS = document.createElement("script");
+hubJS.setAttribute("src", "https://js-na1.hs-scripts.com/24076351.js");
+document.body.appendChild(hubJS);
+
+
+let mainJS = document.createElement("script");
+mainJS.setAttribute("src", ".././Js/main.js");
+document.body.appendChild(mainJS);
+
+
+hubJS.addEventListener("load", scriptLoaded, false);
+mainJS.addEventListener("load", scriptLoadedMain, false);
+
+function scriptLoaded() {
+  console.log("Script is ready to rock and roll!");
+}
+
+function scriptLoadedMain() {
+  console.log("Script Main is ready to rock and roll!");
+}
+
+</script>
+
+
+
+
+
+
+    
 </body>
 
 </html>

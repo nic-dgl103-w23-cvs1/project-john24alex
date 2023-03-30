@@ -579,7 +579,7 @@ footer .logoFooter {
 
 section.socialIcons ul {
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   gap: 10px;
   margin: 7%;
@@ -589,6 +589,10 @@ section.socialIcons ul {
 section.socialIcons ul li {
   list-style-type: none;
   width: 29px;
+}
+.socialIcons ul li  a{
+  font-size: 0px;
+  line-height: 0px;
 }
 
 footer .adressFooter,
@@ -690,6 +694,11 @@ header ul.socialIcons {
   margin-left: auto;
   margin-right: auto;
 }
+header ul.socialIcons a{
+font-size: 0px;
+
+}
+
 
 nav ul li span.bgBtn {
   mix-blend-mode: overlay;
@@ -1476,6 +1485,9 @@ input:focus {
   .logoMenu {
     display: none;
   }
+ 
+
+
   header nav #menu a {
     color: #4ecdc4;
     width: 100px;

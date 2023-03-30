@@ -45,8 +45,8 @@
 
     <header>
       
-        <a href="index.html">
-            <img src="./images/Logo.svg" alt="The Donut Shop - Logo">
+        <a  href="index.html">
+            <img  src="./images/Logo.svg" alt="The Donut Shop - Logo">
             <span class="sr-only">The Donut Shop - Home Page</span>
           </a>
 
@@ -61,7 +61,7 @@
             </a>
            
             <ul id="menu">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="pages/menu.html">Menu</a></li>
                 <li><a href="pages/about.html">About</a></li>
                 <li><a href="pages/contact.html">Contact</a></li>
@@ -70,15 +70,15 @@
             </ul>
 
             <ul class="socialIcons">
-                <li><a href=""><img src="./images/Facebook-icon.svg" alt="Facebook">
+                <li><a href="index.html"><img src="./images/Facebook-icon.svg" alt="Facebook">
                     <span class="sr-only">The Donut Shop - Facebook</span>
                 
                 </a></li>
-                <li><a href=""><img src="./images/Twiter-icon.svg" alt="Twitter">
+                <li><a href="index.html"><img src="./images/Twiter-icon.svg" alt="Twitter">
                     <span class="sr-only">The Donut Shop - Twitter</span>
                 
                 </a></li>
-                <li><a href=""><img src="./images/Insta-icon.svg" alt="Instagram">
+                <li><a href="index.html"><img src="./images/Insta-icon.svg" alt="Instagram">
                     <span class="sr-only">The Donut Shop - Instagram</span>
                 
                 </a></li>
@@ -290,15 +290,18 @@
     <footer>
         <img class="logoFooter" src="./images/Logo.svg" alt="he Donut Shop Logo">
         <section class="socialIcons">
-            <ul>
-                <li><a href=""><img src="./images/Facebook-icon.svg" alt="Facebook">
+            <ul class="socialIcons">
+                <li><a href="index.html"><img src="./images/Facebook-icon.svg" alt="Facebook">
                     <span class="sr-only">The Donut Shop - Facebook</span>
+                
                 </a></li>
-                <li><a href=""><img src="./images/Twiter-icon.svg" alt="Twitter">
+                <li><a href="index.html"><img src="./images/Twiter-icon.svg" alt="Twitter">
                     <span class="sr-only">The Donut Shop - Twitter</span>
+                
                 </a></li>
-                <li><a href=""><img src="./images/Insta-icon.svg" alt="Instagram">
+                <li><a href="index.html"><img src="./images/Insta-icon.svg" alt="Instagram">
                     <span class="sr-only">The Donut Shop - Instagram</span>
+                
                 </a></li>
             </ul>
         </section>
@@ -310,11 +313,41 @@
     </footer>
     <p class="legalText"> <strong> Disclaimer:</strong> This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
     
-    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
-    <script  src="./Js/main.js" defer></script>
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" src="//js-na1.hs-scripts.com/24076351.js" defer></script>
-<!-- End of HubSpot Embed Code -->
+
+
+<!-- Scripts JS Embed Code -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<script>
+
+    
+
+
+
+let hubJS = document.createElement("script");
+hubJS.setAttribute("src", "https://js-na1.hs-scripts.com/24076351.js");
+document.body.appendChild(hubJS);
+
+
+let mainJS = document.createElement("script");
+mainJS.setAttribute("src", "./Js/main.js");
+document.body.appendChild(mainJS);
+
+
+hubJS.addEventListener("load", scriptLoaded, false);
+mainJS.addEventListener("load", scriptLoadedMain, false);
+
+function scriptLoaded() {
+  console.log("Script is ready to rock and roll!");
+}
+
+function scriptLoadedMain() {
+  console.log("Script Main is ready to rock and roll!");
+}
+
+</script>
+
 </body>
 
 
