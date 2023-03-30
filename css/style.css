@@ -142,6 +142,7 @@ header img {
   margin-right: auto;
   width: 360px;
   margin-left: auto;
+  opacity: 0;
 }
 
 /*----------  Menu Section ----------*/
@@ -849,7 +850,11 @@ div.socialIcons ul {
   position: absolute;
   height: 242px;
   bottom: -11px;
-  right: 64%;
+  /* right: 64%; */
+
+  /* animation */
+  right: 100%;
+
 }
 
 .hero-menu h1 {
