@@ -1582,6 +1582,7 @@ input:focus {
   height: 45px;
   border: #fff solid 0.5px;
   cursor: pointer;
+  padding-left: 48px;
 }
 .btn:hover, .btn:focus {
  
@@ -1599,7 +1600,7 @@ input:focus {
   transition: background 300ms ease-in-out;
   padding-top: 10px;
   width: 180px !important;
-  text-align: center;
+ 
   left: 120px;
   position: absolute;
   top: 30px;
@@ -1620,7 +1621,8 @@ input:focus {
   
       width: 180px !important;
       height: 47px !important;
-      text-align: center;
+   
+      padding-left: 28px;
 }
 .second:hover {
   background-position: 0;
@@ -1640,6 +1642,7 @@ input:focus {
   color: #32b9b3;
   width: 250px;
   padding-top: 12px;
+  padding-left: 0px;
 }
 .third:hover {
   background-position: 0;
@@ -1659,6 +1662,7 @@ input:focus {
   font-size: 1.6rem;
   color: #f8d200;
   width: 250px;
+  padding-left: 0px;
   padding-top: 12px;
 }
 .fifth:hover {
